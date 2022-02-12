@@ -81,8 +81,8 @@ public class EmailSenderImpl implements EmailSender{
 
 	private void sendEmail() throws MessagingException {
 		// TODO Auto-generated method stub
-		 String fromUser ="haariscart.dean@gmail.com";                //"thaqifullstack@gmail.com";
-		 String fromUserPassword = "pass***1";
+		 String fromUser ="<<Email id>>";                //"thaqifullstack@gmail.com";
+		 String fromUserPassword = "<<password>>";
 		 String emailHost="smtp.gmail.com";
 		 Transport transport = newSession.getTransport("smtp");
 		 transport.connect(emailHost,fromUser,fromUserPassword);
