@@ -172,7 +172,7 @@ public class CartController {
 //			System.out.println(inv);
 			 List<WishList> wishList=wishimpl.getWishList((int)user_id,0);
 			 	if(wishList!=null) {
-				var client= new RazorpayClient("rzp_test_T5KTnhikoHhbos","gJj5MqCCOZsXvWJiwniRKeNp");
+				var client= new RazorpayClient("<<razorpay id>>","<<secret key>>");
 				JSONObject options = new JSONObject();
 				options.put("amount", amount*100);
 				options.put("currency", "INR");
